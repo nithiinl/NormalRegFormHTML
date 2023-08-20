@@ -3,18 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admission form</title>
+<style>
+    #form1{
+        background-color: lightsalmon;
+    }
+    #nithin{
+        background-color: lightseagreen;
+        text-align: center;
+        text-decoration: solid;
+    }
+</style>
 </head>
-<body>
-    <form>
-    <h1>College Admission Registration</h1>
-    <label for="name">Student Name: </label>
-    <input type="text" placeholder="Enter student name">
-    <br><br><br><br>
-    <label for="name">Father Name: </label>
-    <input type="text" placeholder="Enter father name">
+<body style="background-color: white;">
+    <form id="form">
+    <h1 id="nithin">COLLEGE ADMISSION REGISTRATION</h1>
 
+    <div id="form1">
+    <fieldset>
+        <legend>Perosnal Info</legend>
+
+    <label for="name">First Name: </label>
+    <input type="text" id="name" placeholder="Enter First name" required>
+
+    <br><br>
+    <label for="fname">Last Name: </label>
+    <input type="text" id="fname" placeholder="Enter Last name" required>
+
+    <br><br>
+    <label for="father">Father Name: </label>
+    <input type="text" id="father" placeholder="Enter Father name" required>
+
+    <br><br>
+    <label for="mother">Mother Name: </label>
+    <input type="text" id="mother" placeholder="Enter Mother name" required>
+
+    <br><br>
+    <label for="number">Mobile Number: </label>
+    <input type="number" id="number" placeholder="Enter Mobile Number" minlength="10" maxlength="10" required>
+
+    <br><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" placeholder="Enter Your Mail ID" >
+
+    <br><br>
+    <label for="dob">Select your DOB: </label>
+    <input type="date" name="dob" id="dob">
+
+    <br><br>
+    <label for="gender">Gender: </label>
+    <input type="radio" name="g" id="gender">Male
+    <input type="radio" name="g" id="gender">Female
+    <input type="radio" name="g" id="gender">Other
+    </fieldset>
+    <br><br>
+
+
+    <fieldset>
+        <legend>Perosnal Interests</legend>
+    <label for="hobbies">Select your extra-curricular Activities: </label> <br><br>
+    <input type="checkbox" name="hob" id="hobbies">Dancing
+    <input type="checkbox" name="hob" id="hobbies">Singing
+    <input type="checkbox" name="hob" id="hobbies">Acting
+    <input type="checkbox" name="hob" id="hobbies">Volunteering
+    <input type="checkbox" name="hob" id="hobbies">Social Clubs
+
+    <br><br>
+    <label for="color">Select Your Favourite Colour: </label>
+    <input type="color" name="col" id="color" >
+
+    <br><br>
+    <label for="text1">Enter your other interest: </label>
+    <input type="text" name="text1" id="text1" maxlength="100">
+    <br><br>
+
+    </fieldset>
+    </div>
+    </form>
+    
+    <div>
+    <form>
+        <br><br>
     <input type="submit">
+    <input type="reset">
+    </form>
+    </div>
     </form>
 </body>
 </html>
